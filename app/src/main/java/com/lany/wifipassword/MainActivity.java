@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         aa=aa.replace("ssid=", ssid+": ");
         aa=aa.replace("psk=", pwd+": ");
         aa=aa.replace("\"", "");
-        aa=aa+"<p>Wifi Key Viey 1.0<br>Created By <a href=\"https://github.com/Maralexbar\">Maralexbar<br></a>Github: <a href=\"https://github.com/Maralexbar/Wifi-Key-View\">https://github.com/Maralexbar/Wifi-Key-View</a></p>";
         w.loadData(aa, "text/html", null);
     }
 
