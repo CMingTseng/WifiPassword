@@ -1,9 +1,7 @@
 package com.lany.wifipassword;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 
 import java.io.BufferedReader;
@@ -69,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
             ret = id == 0 ? error+"<hr>" : aa;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            return e.toString();
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            return e.toString();
         }
         return ret;
     }
